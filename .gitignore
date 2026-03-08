@@ -1,0 +1,10 @@
+# Backend
+server/data/
+
+# Expo / Node
+node_modules/
+.expo/
+dist/
+*.log
+.env
+.env.local

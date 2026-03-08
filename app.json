@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "VeloLedger",
+    "slug": "veloledger",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#aa2e25"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.veloledger.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "VeloLedger ใช้กล้องเพื่อสแกนใบเสร็จและบันทึกค่าใช้จ่าย",
+        "NSPhotoLibraryUsageDescription": "ใช้เลือกรูปใบเสร็จจากคลังรูป"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#aa2e25"
+      },
+      "package": "com.veloledger.app",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "veloledger",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "VeloLedger ใช้กล้องเพื่อสแกนใบเสร็จ"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ใช้เลือกรูปใบเสร็จจากคลังรูป"
+        }
+      ]
+    ]
+  }
+}
