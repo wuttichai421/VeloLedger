@@ -29,7 +29,8 @@
       "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE"]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "static"
     },
     "scheme": "veloledger",
     "plugins": [

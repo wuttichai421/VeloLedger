@@ -1,4 +1,4 @@
-# ลิงก์ทุกหน้าของแอป FlowAccount
+# ลิงก์ทุกหน้าของแอป VeloLedger
 
 ใช้กับ base URL: `http://localhost:8084` (หรือโดเมนจริงเมื่อ deploy)
 
