@@ -37,3 +37,16 @@ npx expo export --platform web
 ```
 
 ถ้าสำเร็จ จะมีโฟลเดอร์ `dist/` — นำโฟลเดอร์นี้หรือให้ Vercel/Netlify รันคำสั่งด้านบนแทนได้
+
+---
+
+## ถ้า Vercel ผูกกับ repo อื่น (เช่น veloledgernew)
+
+ถ้าโปรเจกต์บน Vercel ผูกกับ **wuttichai421/veloledgernew** (คนละ repo กับ VeloLedger) ให้ sync โค้ดไปที่ repo นั้นแล้ว redeploy:
+
+```bash
+git remote add veloledgernew https://github.com/wuttichai421/veloledgernew.git
+git push veloledgernew main
+```
+
+จากนั้นใน Vercel กด Redeploy หรือรอ auto deploy จาก push

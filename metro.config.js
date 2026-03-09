@@ -4,6 +4,13 @@ const fs = require('fs');
 
 const config = getDefaultConfig(__dirname);
 
+// Keep class names when minifying so Expo web modules don't throw "Module implementation must be a class"
+config.transformer = config.transformer || {};
+config.transformer.minifierConfig = {
+  keep_classnames: true,
+  keep_fnames: true,
+};
+
 // Fix: resolve react-native-web/dist/index on web (Windows/module resolution)
 const rnwRoot = path.dirname(require.resolve('react-native-web/package.json'));
 config.resolver = config.resolver || {};
